@@ -91,9 +91,7 @@ class App extends Component {
         selected={this.state.selected}
         />
       </div>
-      <div id="right">
-        <Selected person={this.state.selected}/>
-      </div>
+      <Selected person={this.state.selected}/>
     </div>
     )
   };
