@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#list {
+  margin: 8px 0 0 0;
+  padding: 0 8px 0 8px;
+  min-width: 60%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .person {
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 0px 0 8px 0;
+    cursor: pointer;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .selected{
+    border-radius: 8px;
+    border: 2px solid $primary-color;
+    background: lighten($primary-color, 15%);
+
+  }
+
+  .person:hover{
+    background-color: lighten(blue, 45%);
+  }
+
+}

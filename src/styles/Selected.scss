@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+#selected {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  // height: 100%;
+  
+  max-width: 200px;
+  
+
+  .imagesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+
+  .blurredImage{
+    z-index: -1;
+    justify-content: center;
+    background: blue;
+    filter: blur(2px);
+    width: 90%;
+  }
+
+  .realImage{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    border: 4px solid white;
+    border-radius: 50%;
+    width: auto;
+  }
+
+  .info {
+    margin-top: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 8%;
+
+    h3{
+      margin: 0;
+      color: darken($primary-color, 15%);
+      font-size: 0.8em;
+    }
+  
+    p{
+      margin: 0px 0 8% 0;
+      font-weight: 500;
+    }
+  }
+}
